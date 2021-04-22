@@ -1,1 +1,18 @@
-﻿
+@mixin btn-head {
+  button,button:active {
+    background-color: $head-button;
+    color: $container-bg;
+    padding: 6px 20px;
+    border-radius: 1.3em;
+    border-style: none;
+    outline: none;
+      &:focus{
+        background-color: $button-focus;
+      }
+    }
+  }
+@mixin flex{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}

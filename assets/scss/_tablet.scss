@@ -1,1 +1,48 @@
-﻿
+@media screen and (max-width: 768px) {
+  .container {
+    grid-template-rows: repeat(8, auto);
+  }
+  header {
+    grid-column: 1/4;
+    grid-row: 1/2;
+  }
+  .hero {
+    display: none;
+  }
+  .sidebar {
+    grid-column: 1/4;
+    grid-row: 2/3;
+    border-top: none;
+    text-align: center;
+    padding: 0;
+  }
+  .sidebar ul {
+    @include flex();
+  }
+  main {
+    grid-column: 1/4;
+    grid-row: 3/4;
+  }
+  .help {
+    grid-column: 1/4;
+    grid-row: 4/5;
+  }
+  .gallery {
+    grid-column: 1/4;
+    grid-row: 5/6;
+  }
+  .sidebar-related {
+    grid-column: 1/4;
+    grid-row: 6/7;
+    text-align: center;
+  }
+  .sidebar-related ul {
+    @include flex();
+  }
+  .footer {
+    grid-column: 1/4;
+    grid-row: 7/8;
+  }
+
+
+}
