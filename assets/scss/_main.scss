@@ -194,11 +194,11 @@ main {
   grid-column: 1/4;
   grid-row: 6/7;
   text-align: center;
-  background-color: #9f9c9c;
+  background-color: $head;
   padding: 1em 0;
 
   h4 {
-    color: #fff;
+    color: $container-bg;
     margin-bottom: .7em;
   }
 }
